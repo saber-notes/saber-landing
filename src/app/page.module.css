@@ -31,3 +31,9 @@
   margin-top: 0;
   text-align: center;
 }
+
+.githubLogo {
+  width: auto;
+  height: 1.4em;
+  vertical-align: bottom;
+}

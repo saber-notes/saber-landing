@@ -24,6 +24,24 @@ export default function Home() {
           A cross-platform libre handwritten notes app
         </p>
       </div>
+
+      <div id="github">
+        <h2>Open source</h2>
+        <p>No sneaky stuff! Saber is free and open source software.</p>
+        <p>
+          Find the code on
+          <a href="https://github.com/adil192/saber">
+            <Image
+              className={styles.githubLogo}
+              src="images/badges/GitHub_Logo.png"
+              alt="GitHub"
+              width={100}
+              height={41}
+            />
+          </a>
+          .
+        </p>
+      </div>
     </main>
   )
 }
