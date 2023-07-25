@@ -25,7 +25,15 @@ export default function Home() {
         </p>
       </div>
 
-      <div id="github">
+      <div className={styles.github}>
+        <Image
+          className={styles.githubDoodle}
+          src="images/doodles/rectangle.svg"
+          alt=""
+          aria-hidden="true"
+          width={640}
+          height={277}
+        />
         <h2>Open source</h2>
         <p>No sneaky stuff! Saber is free and open source software.</p>
         <p>

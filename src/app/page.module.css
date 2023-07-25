@@ -32,6 +32,21 @@
   text-align: center;
 }
 
+.github {
+  position: relative;
+  text-align: left;
+  padding: 6rem;
+}
+.githubDoodle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: left;
+  z-index: -1;
+}
 .githubLogo {
   width: auto;
   height: 1.4em;
