@@ -3,6 +3,7 @@ const nextConfig = {
 	output: 'export',
 	basePath: '/saber-landing',
 	images: {
+		unoptimized: true,
 		remotePatterns: [
 			{
 				protocol: 'https',
