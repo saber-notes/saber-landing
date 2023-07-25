@@ -20,6 +20,9 @@ export default function Home() {
           height={100}
         />
         <h1 className={styles.title}>Saber</h1>
+        <p className={styles.summary}>
+          A cross-platform libre handwritten notes app
+        </p>
       </div>
     </main>
   )

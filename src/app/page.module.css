@@ -9,9 +9,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 40ch;
-  min-width: 32ch;
+  max-width: 45ch;
+  min-width: 38ch;
   margin: auto;
+  padding: 4rem;
 }
 .headerDoodle {
   position: absolute;
@@ -21,4 +22,12 @@
   height: 100%;
   object-fit: contain;
   z-index: -1;
+}
+
+.title {
+  margin-bottom: 0;
+}
+.summary {
+  margin-top: 0;
+  text-align: center;
 }
