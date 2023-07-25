@@ -10,8 +10,8 @@ export default function Home() {
           src="images/doodles/square.svg"
           alt=""
           aria-hidden="true"
-          width={100}
-          height={100}
+          width={370}
+          height={348}
         />
         <Image
           src="https://raw.githubusercontent.com/adil192/saber/main/assets/icon/resized/icon-512x512.png"
