@@ -4,7 +4,6 @@ import Image from 'next/image'
 import styles from './page.module.css'
 import { useEffect } from 'react';
 import { annotate, annotationGroup } from 'rough-notation';
-import { RoughAnnotationGroup } from 'rough-notation/lib/model';
 
 export default function Home() {
   useEffect(() => {
