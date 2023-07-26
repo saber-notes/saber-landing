@@ -1,5 +1,8 @@
 .main {
 }
+.main > div {
+  margin: 2rem auto;
+}
 
 .header {
   position: relative;
@@ -7,8 +10,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 45ch;
-  margin: auto;
+  padding: 1ch;
+  max-width: 20ch;
+  box-sizing: content-box;
 }
 .title {
   margin-bottom: 0;
