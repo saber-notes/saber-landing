@@ -1,5 +1,5 @@
 :root {
-  --primary-color: #f1c40f;
+  --primary-color: #ffd14b;
 }
 
 * {
@@ -16,4 +16,5 @@ a {
 
 h2 {
   display: inline-block;
+  margin-bottom: 0.2rem;
 }

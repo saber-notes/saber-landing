@@ -11,9 +11,17 @@ export default function Home() {
     const headerElem = document.querySelector<HTMLElement>('.'+styles.header)!;
     const h2s = document.querySelectorAll('h2');
 
-    const headerAnnotation = annotate(headerElem, { type: 'box' });
+    const headerAnnotation = annotate(headerElem, {
+      type: 'box',
+      strokeWidth: 2,
+      iterations: 2,
+    });
     const h2Annotations = Array.from(h2s)
-        .map((h2) => annotate(h2, { type: 'box' }));
+        .map((h2) => annotate(h2, {
+          type: 'highlight',
+          color: '#ffd14ba0',
+          iterations: 1,
+        }));
 
     const group = annotationGroup([headerAnnotation, ...h2Annotations]);
     group.show();
