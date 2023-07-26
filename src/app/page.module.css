@@ -31,6 +31,11 @@
   height: 1.4em;
   vertical-align: bottom;
 }
+@media (prefers-color-scheme: dark) {
+  .githubLogo {
+    filter: invert(1);
+  }
+}
 
 .underlineMe {
 

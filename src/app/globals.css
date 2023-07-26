@@ -1,5 +1,15 @@
 :root {
   --primary-color: #ffd14b;
+  --highlight-color: #ffe28e;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --highlight-color: #aa9866;
+  }
+  html {
+    color-scheme: dark;
+  }
 }
 
 * {

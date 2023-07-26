@@ -26,6 +26,8 @@ export default async function() {
 
 function Home({ versionName }: { versionName: string }) {
   useEffect(() => {
+    const highlightColor = "var(--highlight-color)";
+
     const headerElem = document.querySelector<HTMLElement>('.'+styles.header)!;
     const otherElems = document.querySelectorAll<HTMLElement>(
       'h2, .'+styles.underlineMe
@@ -40,13 +42,13 @@ function Home({ versionName }: { versionName: string }) {
       if (elem.tagName === 'H2') {
         return annotate(elem, {
           type: 'highlight',
-          color: '#ffe28e',
+          color: highlightColor,
           iterations: 2,
         });
       } else if (elem.classList.contains(styles.underlineMe)) {
         return annotate(elem, {
           type: 'underline',
-          color: '#ffe28e',
+          color: highlightColor,
           iterations: 2,
         });
       } else {
