@@ -13,3 +13,7 @@ a {
   border-start-start-radius: 5px;
   border-start-end-radius: 3px;
 }
+
+h2 {
+  display: inline-block;
+}
