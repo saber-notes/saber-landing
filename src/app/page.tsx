@@ -75,14 +75,14 @@ export default function Home() {
         <h2>Cross-platform</h2>
         <p>
           You can sync and edit your notes across all your devices,
-          whether they're a phone, tablet, or computer.
+          whether they&apos;re a phone, tablet, or computer.
         </p>
       </div>
 
       <div className={styles.feature}>
         <h2>The perfect highlighter</h2>
         <p>
-          Saber's highlighter doesn't overlap with itself
+          Saber&apos;s highlighter doesn&apos;t overlap with itself
           and change color when you go over the same area again.
         </p>
         <p>
@@ -106,7 +106,7 @@ export default function Home() {
       <div className={styles.feature}>
         <h2>Cohesive dark mode</h2>
         <p>
-          Saber's dark mode doesn't just darken the UI;
+          Saber&apos;s dark mode doesn&apos;t just darken the UI;
           it also darkens the notes themselves.
         </p>
         <p>
