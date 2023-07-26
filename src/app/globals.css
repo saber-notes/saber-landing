@@ -7,11 +7,8 @@
 }
 
 a {
-  border-bottom: var(--primary-color) 4px solid;
-  border-end-start-radius: 3px;
-  border-end-end-radius: 5px;
-  border-start-start-radius: 5px;
-  border-start-end-radius: 3px;
+  color: inherit;
+  text-decoration: underline;
 }
 
 h2 {

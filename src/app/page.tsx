@@ -123,11 +123,13 @@ export default function Home() {
           <a href="https://github.com/adil192/saber">
             <Image
               className={styles.githubLogo}
-              src="images/badges/GitHub_Logo.png"
-              alt="GitHub"
+              src="images/badges/github-mark.svg"
+              alt=""
+              aria-hidden="true"
               width={100}
               height={41}
             />
+            GitHub
           </a>
           .
         </p>
