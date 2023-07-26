@@ -37,8 +37,9 @@
 
 }
 
-.badges {
-  padding: 1ch;
+.main .badges {
+  margin-left: 2ch;
+  margin-right: 2ch;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
