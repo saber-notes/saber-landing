@@ -4,8 +4,27 @@ import Image from 'next/image'
 import styles from './page.module.css'
 import { useEffect } from 'react';
 import { annotate, annotationGroup } from 'rough-notation';
+import assert from 'assert';
 
-export default function Home() {
+/**
+  * This function gets the latest version of Saber from GitHub,
+  * without the v prefix. (e.g. 1.0.0 instead of v1.0.0)
+  */
+async function getVersionName(): Promise<string> {
+  const res = await fetch('https://api.github.com/repos/adil192/saber/releases/latest');
+  const json = await res.json();
+  const versionWithV = json.tag_name;
+  assert(versionWithV.startsWith('v'));
+  const versionWithoutV = versionWithV.slice(1);
+  return versionWithoutV;
+}
+
+export default async function() {
+  const versionName = await getVersionName();
+  return <Home versionName={versionName} />;
+}
+
+function Home({ versionName }: { versionName: string }) {
   useEffect(() => {
     const headerElem = document.querySelector<HTMLElement>('.'+styles.header)!;
     const otherElems = document.querySelectorAll<HTMLElement>(
@@ -86,7 +105,7 @@ export default function Home() {
             height={40}
           />
         </a>
-        <a href="https://github.com/adil192/saber/releases/download/v0.14.10/SaberInstaller_v0.14.10.exe">
+        <a href={`https://github.com/adil192/saber/releases/download/v${versionName}/SaberInstaller_v${versionName}.exe`}>
           <Image
             src="https://raw.githubusercontent.com/adil192/saber/main/assets_raw/badges/windows-badge.png"
             alt="Download for Windows"
@@ -102,7 +121,7 @@ export default function Home() {
             height={100}
           />
         </a>
-        <a href="https://github.com/adil192/saber/releases/download/v0.14.10/Saber-0.14.10-x86_64.AppImage">
+        <a href={`https://github.com/adil192/saber/releases/download/v${versionName}/Saber-${versionName}-x86_64.AppImage`}>
           <Image
             src="https://raw.githubusercontent.com/adil192/saber/main/assets_raw/badges/appimage-logo.png"
             alt="Get it as an AppImage"
