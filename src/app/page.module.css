@@ -23,11 +23,15 @@
   text-align: center;
 }
 
-.github {
+.feature {
   padding: 1ch;
 }
 .githubLogo {
   width: auto;
   height: 1.4em;
   vertical-align: bottom;
+}
+
+.underlineMe {
+
 }
