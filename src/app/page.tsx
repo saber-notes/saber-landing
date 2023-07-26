@@ -111,7 +111,7 @@ function Home({ versionName }: { versionName: string }) {
           <Image
             src="https://raw.githubusercontent.com/adil192/saber/main/assets_raw/badges/windows-badge.png"
             alt="Download for Windows"
-            width={392}
+            width={391}
             height={129}
           />
         </a>

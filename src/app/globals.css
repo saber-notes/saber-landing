@@ -5,7 +5,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --highlight-color: #aa9866;
+    --highlight-color: #806000;
   }
   html {
     color-scheme: dark;
