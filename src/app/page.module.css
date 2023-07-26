@@ -1,7 +1,3 @@
-.main {
-  max-width: 43rem; /* big enough to fit the badges nicely */
-  margin: 0 auto;
-}
 .main > div {
   margin: 2rem auto;
 }

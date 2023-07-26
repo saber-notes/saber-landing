@@ -16,6 +16,11 @@
   box-sizing: border-box;
 }
 
+main {
+  max-width: 43rem; /* big enough to fit the badges nicely */
+  margin: 0 auto;
+}
+
 a {
   color: inherit;
   text-decoration: underline;
