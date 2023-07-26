@@ -6,14 +6,6 @@ export default function Home() {
     <main className={styles.main}>
       <div className={styles.header}>
         <Image
-          className={styles.headerDoodle}
-          src="images/doodles/square.svg"
-          alt=""
-          aria-hidden="true"
-          width={370}
-          height={348}
-        />
-        <Image
           src="https://raw.githubusercontent.com/adil192/saber/main/assets/icon/resized/icon-512x512.png"
           alt="Logo"
           width={100}
@@ -26,14 +18,6 @@ export default function Home() {
       </div>
 
       <div className={styles.github}>
-        <Image
-          className={styles.githubDoodle}
-          src="images/doodles/rectangle.svg"
-          alt=""
-          aria-hidden="true"
-          width={640}
-          height={277}
-        />
         <h2>Open source</h2>
         <p>No sneaky stuff! Saber is free and open source software.</p>
         <p>
