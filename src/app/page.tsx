@@ -61,6 +61,65 @@ export default function Home() {
         </p>
       </div>
 
+      <div className={styles.badges}>
+        <a href="https://play.google.com/store/apps/details?id=com.adilhanney.saber">
+          <Image
+            src="https://raw.githubusercontent.com/adil192/saber/main/assets_raw/badges/google-play-badge.png"
+            alt="Get it on Google Play"
+            width={564}
+            height={168}
+          />
+        </a>
+        <a href="https://f-droid.org/packages/com.adilhanney.saber/">
+          <Image
+            src="https://raw.githubusercontent.com/adil192/saber/main/assets_raw/badges/f-droid-badge.png"
+            alt="Get it on F-Droid"
+            width={564}
+            height={168}
+          />
+        </a>
+        <a href="https://apps.apple.com/us/app/saber/id1671523739">
+          <Image
+            src="https://raw.githubusercontent.com/adil192/saber/main/assets_raw/badges/app-store-badge.svg"
+            alt="Download on the App Store"
+            width={120}
+            height={40}
+          />
+        </a>
+        <a href="https://github.com/adil192/saber/releases/download/v0.14.10/SaberInstaller_v0.14.10.exe">
+          <Image
+            src="https://raw.githubusercontent.com/adil192/saber/main/assets_raw/badges/windows-badge.png"
+            alt="Download for Windows"
+            width={392}
+            height={129}
+          />
+        </a>
+        <a href="https://flathub.org/apps/details/com.adilhanney.saber">
+          <Image
+            src="https://raw.githubusercontent.com/adil192/saber/main/assets_raw/badges/flathub-badge.svg"
+            alt="Download on Flathub"
+            width={300}
+            height={100}
+          />
+        </a>
+        <a href="https://github.com/adil192/saber/releases/download/v0.14.10/Saber-0.14.10-x86_64.AppImage">
+          <Image
+            src="https://raw.githubusercontent.com/adil192/saber/main/assets_raw/badges/appimage-logo.png"
+            alt="Get it as an AppImage"
+            width={468}
+            height={468}
+          />
+        </a>
+        <a href="https://snapcraft.io/saber">
+          <Image
+            src="https://raw.githubusercontent.com/adil192/saber/main/assets_raw/badges/snap-badge.png"
+            alt="Get it from the Snap Store"
+            width={364}
+            height={112}
+          />
+        </a>
+      </div>
+
       <div className={styles.feature}>
         <h2>Private</h2>
         <p>Only you can access your notes!</p>

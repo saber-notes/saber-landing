@@ -1,5 +1,5 @@
 .main {
-  max-width: 40rem;
+  max-width: 43rem; /* big enough to fit the badges nicely */
   margin: 0 auto;
 }
 .main > div {
@@ -34,4 +34,15 @@
 
 .underlineMe {
 
+}
+
+.badges {
+  padding: 1ch;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.badges img {
+  width: auto;
+  height: 4rem;
 }
