@@ -29,6 +29,7 @@ function Home({ versionName }: { versionName: string }) {
     const highlightColor = "var(--highlight-color)";
 
     const headerElem = document.querySelector<HTMLElement>('.'+styles.header)!;
+    const badgesElem = document.querySelector<HTMLElement>('.'+styles.badges)!;
     const otherElems = document.querySelectorAll<HTMLElement>(
       'h2, .'+styles.underlineMe
     );
@@ -37,6 +38,12 @@ function Home({ versionName }: { versionName: string }) {
       type: 'box',
       strokeWidth: 2,
       iterations: 2,
+    });
+    const badgesAnnotation = annotate(badgesElem, {
+      type: 'bracket',
+      strokeWidth: 2,
+      iterations: 2,
+      brackets: ['right', 'left'],
     });
     const otherElemsAnnotations = Array.from(otherElems).map((elem) => {
       if (elem.tagName === 'H2') {
@@ -58,6 +65,7 @@ function Home({ versionName }: { versionName: string }) {
 
     const group = annotationGroup([
       headerAnnotation,
+      badgesAnnotation,
       ...otherElemsAnnotations,
     ]);
     group.show();
