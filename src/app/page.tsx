@@ -7,7 +7,6 @@ import { annotate, annotationGroup } from 'rough-notation';
 import { RoughAnnotationGroup } from 'rough-notation/lib/model';
 
 export default function Home() {
-  let lastAnnotationGroup: RoughAnnotationGroup | null = null;
   useEffect(() => {
     const headerElem = document.querySelector<HTMLElement>('.'+styles.header)!;
     const h2s = document.querySelectorAll('h2');
@@ -16,9 +15,12 @@ export default function Home() {
     const h2Annotations = Array.from(h2s)
         .map((h2) => annotate(h2, { type: 'box' }));
 
-    lastAnnotationGroup?.hide();
     const group = annotationGroup([headerAnnotation, ...h2Annotations]);
     group.show();
+
+    return () => {
+      group.hide();
+    };
   }, []);
 
   return (
