@@ -157,6 +157,10 @@ function Home({ versionName }: { versionName: string }) {
           knowing that they are encrypted and stored securely,
           and not even the server can read them.
         </p>
+        <p>
+          You can also read the{' '}
+          <a href="/privacy_policy">privacy policy</a>.
+        </p>
       </div>
 
       <div className={styles.feature}>
