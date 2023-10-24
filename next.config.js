@@ -8,7 +8,7 @@ const nextConfig = {
 				protocol: 'https',
 				hostname: 'raw.githubusercontent.com',
 				port: '',
-				pathname: '/adil192/saber/**',
+				pathname: '/saber-notes/saber/**',
 			},
 		],
 	},

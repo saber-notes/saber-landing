@@ -11,7 +11,7 @@ import assert from 'assert';
   * without the v prefix. (e.g. 1.0.0 instead of v1.0.0)
   */
 async function getVersionName(): Promise<string> {
-  const res = await fetch('https://api.github.com/repos/adil192/saber/releases/latest');
+  const res = await fetch('https://api.github.com/repos/saber-notes/saber/releases/latest');
   const json = await res.json();
   const versionWithV = json.tag_name;
   assert(versionWithV.startsWith('v'));
@@ -79,7 +79,7 @@ function Home({ versionName }: { versionName: string }) {
     <main className={styles.main}>
       <div className={styles.header}>
         <Image
-          src="https://raw.githubusercontent.com/adil192/saber/main/assets/icon/resized/icon-512x512.png"
+          src="https://raw.githubusercontent.com/saber-notes/saber/main/assets/icon/resized/icon-512x512.png"
           alt="Logo"
           width={100}
           height={100}
@@ -93,7 +93,7 @@ function Home({ versionName }: { versionName: string }) {
       <div className={styles.badges}>
         <a href="https://play.google.com/store/apps/details?id=com.adilhanney.saber">
           <Image
-            src="https://raw.githubusercontent.com/adil192/saber/main/assets_raw/badges/google-play-badge.png"
+            src="https://raw.githubusercontent.com/saber-notes/saber/main/assets_raw/badges/google-play-badge.png"
             alt="Get it on Google Play"
             width={564}
             height={168}
@@ -101,7 +101,7 @@ function Home({ versionName }: { versionName: string }) {
         </a>
         <a href="https://f-droid.org/packages/com.adilhanney.saber/">
           <Image
-            src="https://raw.githubusercontent.com/adil192/saber/main/assets_raw/badges/f-droid-badge.png"
+            src="https://raw.githubusercontent.com/saber-notes/saber/main/assets_raw/badges/f-droid-badge.png"
             alt="Get it on F-Droid"
             width={564}
             height={168}
@@ -109,15 +109,15 @@ function Home({ versionName }: { versionName: string }) {
         </a>
         <a href="https://apps.apple.com/us/app/saber/id1671523739">
           <Image
-            src="https://raw.githubusercontent.com/adil192/saber/main/assets_raw/badges/app-store-badge.svg"
+            src="https://raw.githubusercontent.com/saber-notes/saber/main/assets_raw/badges/app-store-badge.svg"
             alt="Download on the App Store"
             width={120}
             height={40}
           />
         </a>
-        <a href={`https://github.com/adil192/saber/releases/download/v${versionName}/SaberInstaller_v${versionName}.exe`}>
+        <a href={`https://github.com/saber-notes/saber/releases/download/v${versionName}/SaberInstaller_v${versionName}.exe`}>
           <Image
-            src="https://raw.githubusercontent.com/adil192/saber/main/assets_raw/badges/windows-badge.png"
+            src="https://raw.githubusercontent.com/saber-notes/saber/main/assets_raw/badges/windows-badge.png"
             alt="Download for Windows"
             width={391}
             height={129}
@@ -125,15 +125,15 @@ function Home({ versionName }: { versionName: string }) {
         </a>
         <a href="https://flathub.org/apps/details/com.adilhanney.saber">
           <Image
-            src="https://raw.githubusercontent.com/adil192/saber/main/assets_raw/badges/flathub-badge.svg"
+            src="https://raw.githubusercontent.com/saber-notes/saber/main/assets_raw/badges/flathub-badge.svg"
             alt="Download on Flathub"
             width={300}
             height={100}
           />
         </a>
-        <a href={`https://github.com/adil192/saber/releases/download/v${versionName}/Saber-${versionName}-x86_64.AppImage`}>
+        <a href={`https://github.com/saber-notes/saber/releases/download/v${versionName}/Saber-${versionName}-x86_64.AppImage`}>
           <Image
-            src="https://raw.githubusercontent.com/adil192/saber/main/assets_raw/badges/appimage-logo.png"
+            src="https://raw.githubusercontent.com/saber-notes/saber/main/assets_raw/badges/appimage-logo.png"
             alt="Get it as an AppImage"
             width={468}
             height={468}
@@ -141,7 +141,7 @@ function Home({ versionName }: { versionName: string }) {
         </a>
         <a href="https://snapcraft.io/saber">
           <Image
-            src="https://raw.githubusercontent.com/adil192/saber/main/assets_raw/badges/snap-badge.png"
+            src="https://raw.githubusercontent.com/saber-notes/saber/main/assets_raw/badges/snap-badge.png"
             alt="Get it from the Snap Store"
             width={364}
             height={112}
@@ -212,7 +212,7 @@ function Home({ versionName }: { versionName: string }) {
         <p>No sneaky stuff! Saber is free and open source software.</p>
         <p>
           Find the code on{' '}
-          <a href="https://github.com/adil192/saber">
+          <a href="https://github.com/saber-notes/saber">
             <Image
               className={styles.githubLogo}
               src="images/badges/github-mark.svg"

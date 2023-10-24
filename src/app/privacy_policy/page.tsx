@@ -3,7 +3,7 @@
 import ReactMarkdown from 'react-markdown'
 
 async function getPrivacyPolicyMarkdown(): Promise<string> {
-  const res = await fetch('https://raw.githubusercontent.com/adil192/saber/main/privacy_policy.md');
+  const res = await fetch('https://raw.githubusercontent.com/saber-notes/saber/main/privacy_policy.md');
   const text = await res.text();
   return text;
 }
@@ -21,7 +21,7 @@ function PrivacyPolicy({ markdown }: { markdown: string }) {
       <br />
       <p>
         See this page on{' '}
-        <a href="https://github.com/adil192/saber/blob/main/privacy_policy.md">
+        <a href="https://github.com/saber-notes/saber/blob/main/privacy_policy.md">
           GitHub
         </a>
       </p>

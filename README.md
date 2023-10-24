@@ -1,4 +1,4 @@
-This is the landing page for [Saber: Handwritten Notes](https://github.com/adil192/saber)
+This is the landing page for [Saber: Handwritten Notes](https://github.com/saber-notes/saber)
 built with [Next.js](https://nextjs.org/).
 
 ## Official website
@@ -13,7 +13,7 @@ You can run the website locally by running the following commands:
 
 ```bash
 # Clone the repository
-git clone https://github.com/adil192/saber-landing.git
+git clone https://github.com/saber-notes/saber-landing.git
 cd saber-landing
 
 # Install dependencies
