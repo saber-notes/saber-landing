@@ -9,6 +9,10 @@ on:
   push:
     branches: ["main"]
 
+  # Runs when there's a new Saber release
+  repository_dispatch:
+    types: [saber-release]
+
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
