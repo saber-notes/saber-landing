@@ -11,9 +11,10 @@ import assert from 'assert';
   * without the v prefix. (e.g. 1.0.0 instead of v1.0.0)
   */
 async function getVersionName(): Promise<string> {
-  const res = await fetch('https://api.github.com/repos/saber-notes/saber/releases/latest');
+  // get the latest tag from GitHub (saber-notes/saber)
+  const res = await fetch('https://api.github.com/repos/saber-notes/saber/tags');
   const json = await res.json();
-  const versionWithV = json.tag_name;
+  const versionWithV = json[0].name;
   assert(versionWithV.startsWith('v'));
   const versionWithoutV = versionWithV.slice(1);
   return versionWithoutV;
