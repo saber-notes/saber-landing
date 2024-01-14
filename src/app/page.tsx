@@ -20,7 +20,7 @@ async function getVersionName(): Promise<string> {
   return versionWithoutV;
 }
 
-export default async function() {
+export default async function () {
   const versionName = await getVersionName();
   return <Home versionName={versionName} />;
 }
@@ -29,10 +29,10 @@ function Home({ versionName }: { versionName: string }) {
   useEffect(() => {
     const highlightColor = "var(--highlight-color)";
 
-    const headerElem = document.querySelector<HTMLElement>('.'+styles.header)!;
-    const badgesElem = document.querySelector<HTMLElement>('.'+styles.badges)!;
+    const headerElem = document.querySelector<HTMLElement>('.' + styles.header)!;
+    const badgesElem = document.querySelector<HTMLElement>('.' + styles.badges)!;
     const otherElems = document.querySelectorAll<HTMLElement>(
-      'h2, .'+styles.underlineMe
+      'h2, .' + styles.underlineMe
     );
 
     const headerAnnotation = annotate(headerElem, {
@@ -79,15 +79,20 @@ function Home({ versionName }: { versionName: string }) {
   return (
     <main className={styles.main}>
       <div className={styles.header}>
+        <h1 className={styles.title}>
+          Saber
+        </h1>
+        <p className={styles.subtitle}>
+          Handwritten Notes
+        </p>
         <Image
           src="https://raw.githubusercontent.com/saber-notes/saber/main/assets/icon/resized/icon-512x512.png"
           alt="Logo"
           width={100}
           height={100}
         />
-        <h1 className={styles.title}>Saber</h1>
         <p className={styles.summary}>
-          A cross-platform libre handwritten notes app
+          The notes app built for handwriting
         </p>
       </div>
 

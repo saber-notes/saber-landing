@@ -16,7 +16,7 @@ const neucha = Neucha({
 
 export const metadata: Metadata = {
   title: 'Saber',
-  description: 'A cross-platform libre handwritten notes app',
+  description: 'The notes app built for handwriting',
 }
 
 export default function RootLayout({
