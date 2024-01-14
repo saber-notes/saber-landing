@@ -5,7 +5,12 @@ import { Neucha } from 'next/font/google'
 const neucha = Neucha({
   weight: "400",
   preload: true,
-  fallback: ["Neucha", "Dekko", "cursive"],
+  fallback: [
+    "Neucha", "Dekko",
+    // fallbacks from https://github.com/system-fonts/modern-font-stacks#handwritten
+    'Segoe Print', 'Bradley Hand', 'Chilanka', 'TSCu_Comic',
+    'casual', 'cursive',
+  ],
   subsets: ["latin"],
 })
 
