@@ -1,15 +1,12 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Neucha, Dekko } from 'next/font/google'
+import { Neucha } from 'next/font/google'
 
-const dekko = Dekko({
-  weight: "400",
-  subsets: ["devanagari", "latin", "latin-ext"],
-})
 const neucha = Neucha({
   weight: "400",
-  subsets: ["cyrillic", "latin"],
-  fallback: ["Dekko", "cursive"],
+  preload: true,
+  fallback: ["Neucha", "Dekko", "cursive"],
+  subsets: ["latin"],
 })
 
 export const metadata: Metadata = {
