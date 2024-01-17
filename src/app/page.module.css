@@ -65,3 +65,14 @@
   width: auto;
   height: 3.5rem;
 }
+
+@media (prefers-constrast: more) {
+  .header, .badges, .feature {
+    border: 0.2rem solid;
+    padding: 1rem;
+    border-radius: 0.4rem;
+  }
+  .header + svg, .badges + svg {
+    display: none;
+  }
+}
