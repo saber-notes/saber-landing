@@ -86,7 +86,7 @@ function Home({ versionName }: { versionName: string }) {
           Handwritten Notes
         </p>
         <Image
-          src="https://raw.githubusercontent.com/saber-notes/saber/main/assets/icon/resized/icon-512x512.png"
+          src="https://raw.githubusercontent.com/saber-notes/saber/refs/heads/main/assets/icon/icon.svg"
           alt="Logo"
           width={100}
           height={100}
