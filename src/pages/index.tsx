@@ -1,10 +1,25 @@
 'use client';
 
 import Image from 'next/image'
-import styles from './page.module.css'
+import styles from "./styles/Home.module.css";
 import { useEffect } from 'react';
 import { annotate, annotationGroup } from 'rough-notation';
 import assert from 'assert';
+import { Neucha } from 'next/font/google'
+import Head from "next/head";
+import Link from 'next/link';
+
+const neucha = Neucha({
+  weight: "400",
+  preload: true,
+  fallback: [
+    "Neucha", "Dekko",
+    // fallbacks from https://github.com/system-fonts/modern-font-stacks#handwritten
+    'Segoe Print', 'Bradley Hand', 'Chilanka', 'TSCu_Comic',
+    'casual', 'cursive',
+  ],
+  subsets: ["latin"],
+})
 
 /**
   * This function gets the latest version of Saber from GitHub,
@@ -20,12 +35,13 @@ async function getVersionName(): Promise<string> {
   return versionWithoutV;
 }
 
-export default async function () {
+export async function getStaticProps() {
   const versionName = await getVersionName();
-  return <Home versionName={versionName} />;
+ 
+  return { props: { versionName } };
 }
 
-function Home({ versionName }: { versionName: string }) {
+export default function Home({ versionName }: { versionName: string }) {
   useEffect(() => {
     const highlightColor = "var(--highlight-color)";
 
@@ -77,7 +93,14 @@ function Home({ versionName }: { versionName: string }) {
   }, []);
 
   return (
-    <main className={styles.main}>
+    <>
+    <Head>
+      <title>Saber</title>
+      <meta name="description" content="The notes app built for handwriting" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link rel="icon" href="/favicon.ico" />
+    </Head>
+    <main className={`${styles.main} ${neucha.className}`}>
       <div className={styles.header}>
         <h1 className={styles.title}>
           Saber
@@ -165,7 +188,7 @@ function Home({ versionName }: { versionName: string }) {
         </p>
         <p>
           You can also read the{' '}
-          <a href="/privacy_policy">privacy policy</a>.
+          <Link href="/privacy_policy">privacy policy</Link>.
         </p>
       </div>
 
@@ -233,5 +256,6 @@ function Home({ versionName }: { versionName: string }) {
         </p>
       </div>
     </main>
+    </>
   )
 }
