@@ -32,7 +32,7 @@ export default function PrivacyPolicy({ markdown }: { markdown: string }) {
   return (
     <>
     <Head>
-      <title>Saber: Privacy Policy</title>
+      <title>Saber's Privacy Policy</title>
       <meta name="description" content="The notes app built for handwriting" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <link rel="icon" href="/favicon.ico" />
