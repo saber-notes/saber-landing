@@ -27,6 +27,7 @@ html {
 main {
   max-width: 40rem; /* big enough to fit the badges nicely */
   margin: 0 auto;
+  position: relative; /* rough-notation is positioned absolutely inside this */
 }
 
 a {
