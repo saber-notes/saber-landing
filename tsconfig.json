@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    // Approximate "Baseline Widely Available" by subtracting 4 years from the current year
+    "target": "es2021",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
