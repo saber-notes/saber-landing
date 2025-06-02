@@ -4,12 +4,7 @@ const nextConfig = {
 	images: {
 		unoptimized: true,
 		remotePatterns: [
-			{
-				protocol: 'https',
-				hostname: 'raw.githubusercontent.com',
-				port: '',
-				pathname: '/saber-notes/saber/**',
-			},
+			new URL('https://raw.githubusercontent.com/saber-notes/saber/**'),
 		],
 	},
 	reactStrictMode: true,
