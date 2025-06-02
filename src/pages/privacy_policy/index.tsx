@@ -22,13 +22,16 @@ async function getPrivacyPolicyMarkdown(): Promise<string> {
   return text;
 }
 
-export async function getStaticProps() {
+type _Props = {
+  markdown: string;
+};
+export async function getStaticProps(): Promise<{ props: _Props }> {
   const markdown = await getPrivacyPolicyMarkdown();
  
   return { props: { markdown } };
 }
 
-export default function PrivacyPolicy({ markdown }: { markdown: string }) {
+export default function PrivacyPolicy({ markdown }: _Props) {
   return (
     <>
     <Head>
