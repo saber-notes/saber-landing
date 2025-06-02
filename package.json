@@ -20,5 +20,14 @@
     "react-markdown": "^10.1.0",
     "rough-notation": "^0.5.1",
     "typescript": "^5.8.3"
-  }
+  },
+  "browserslist": [
+    "chrome >0 and last 2.5 years",
+    "edge >0 and last 2.5 years",
+    "safari >0 and last 2.5 years",
+    "firefox >0 and last 2.5 years",
+    "and_chr >0 and last 2.5 years",
+    "and_ff >0 and last 2.5 years",
+    "ios >0 and last 2.5 years"
+  ]
 }
