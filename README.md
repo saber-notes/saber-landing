@@ -1,3 +1,12 @@
+## Archived
+
+This website has been rewritten in Dart with [Jaspr](https://jaspr.site/) at
+[saber-notes/saber_landing](https://github.com/saber-notes/saber_landing).
+
+This repo will be archived and no longer used.
+
+***
+
 This is the landing page for [Saber: Handwritten Notes](https://github.com/saber-notes/saber)
 built with [Next.js](https://nextjs.org/).
 
